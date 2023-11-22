@@ -20,11 +20,6 @@ const Footer = () => (
         <img src={images.logo} alt="footer_logo" />
         <p className="p__opensans">&quot;Der beste Weg, sich selbst zu finden, ist, sich im Dienst an anderen zu verlieren.&quot;</p>
         <img src={images.spoon} className="spoon__img" style={{ marginTop: 15 }} />
-        <div className="app__footer-links_icons">
-          <FiFacebook />
-          <FiTwitter />
-          <FiInstagram />
-        </div>
       </div>
 
       <div className="app__footer-links_work">
