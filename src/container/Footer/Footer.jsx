@@ -37,7 +37,7 @@ const Footer = () => (
     </div>
 
     <div className="footer__copyright">
-      <p className="p__opensans">2021 Gericht. All Rights reserved.</p>
+      <p className="p__opensans">2021 Steinlang Speisenn. Alle Rechte vorbehalten.</p>
     </div>
 
   </div>
