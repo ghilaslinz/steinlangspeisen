@@ -1,0 +1,138 @@
+/* Add this CSS to your main stylesheet to style the reservation form */
+
+/* Overall form styling */
+
+.reservation-form-container{
+    background-color: #130F0D;
+    padding: 4rem 6rem 4rem 6rem !important;
+}
+.reservation-form {
+    background-color: #130F0D; /* Dark background */
+    color: #130F0D; /* Light text */
+    font-family: 'Open Sans', sans-serif; /* Assuming you're using Open Sans, adjust as necessary */
+    max-width: 100%; /* Adjust width as necessary */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    margin: auto;
+  }
+  
+  /* Input and Select field styling */
+  .reservation-form select {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #a79e84; /* Gold accent */
+    border-radius: 4px;
+    background-color: #333; /* Slightly lighter background for inputs */
+    color: #fff;
+  }
+
+
+  .reservation-form input{
+    width: 100%; /* Full width */
+    padding: 10px;
+    border: 1px solid #a79e84; /* Gold accent */
+    border-radius: 4px;
+    background-color: #333; /* Slightly lighter background for inputs */
+    color: #fff;
+  }
+  .reservation-form .reservation-input{
+    font-family: var(--font-base);
+    width: 100%; /* Full width */
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #a79e84; /* Gold accent */
+    border-radius: 4px;
+    background-color: #333; /* Slightly lighter background for inputs */
+    color: #fff;
+  }
+
+  .reservation-form .reservation-calendarpicker{
+    font-family: var(--font-base);
+    width: 100%; /* Full width */
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #a79e84; /* Gold accent */
+    border-radius: 4px;
+    background-color: #333; /* Slightly lighter background for inputs */
+    color: #fff;
+  }
+  .thank-you-message{
+    font-family: var(--font-base);
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+  }
+
+  
+  .reservation-datepicker{
+   margin-bottom:20px;
+   font-family: var(--font-base);
+  }
+
+  .reservation-select{
+    margin-bottom:20px;
+    font-family: var(--font-base);
+   }
+
+  .css-13cymwt-control
+  {
+    width: 100% !important; /* Full width */
+    padding: 0px !important; 
+    margin: 10px 0 !important; 
+    border: 1px solid #a79e84 !important; 
+    border-radius: 4px !important; 
+    background-color: #333 !important; 
+    color: #fff !important; 
+  }
+  
+  /* React DatePicker specific styles */
+  .reservation-form .react-datepicker-wrapper,
+  .reservation-form .react-datepicker__input-container {
+    width: 100%;
+  }
+  
+  /* React Select specific styles */
+  .reservation-form .react-select__control {
+    background-color: #333;
+    border: 1px solid #a79e84; /* Gold accent */
+    color: #fff;
+    border-radius: 4px;
+  }
+  
+  .reservation-form .react-select__menu {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Button styling */
+  .reservation-form button {
+    background-color: var(--color-crimson);
+    color: var(--color-black);
+    font-family: var(--font-base);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /* Button hover effect */
+  .reservation-form button:hover {
+    opacity: 0.9;
+  }
+  
+
+#react-select-3-input {
+    background-color: #130F0D !important;
+  }
+
+  .css-1dimb5e-singleValue {
+    color: #fff !important;
+  }
+
+  
