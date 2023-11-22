@@ -19,7 +19,7 @@ oAuth2Client.setCredentials({
 
 const calendar = google.calendar({ version: 'v3', auth: oAuth2Client });
 
-app.post('/api/reservations', async (req, res) => {
+app.post('https://steinlangspeisen-208ed1730d19.herokuapp.com/api/reservations', async (req, res) => {
   const { name, email, date, time, guests } = req.body;
 
   const eventStartTime = new Date(date);
