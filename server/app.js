@@ -5,7 +5,7 @@ const app = express();
 const cors = require('cors');
 
 app.use(cors());
-app.use(express.json()); // S'assurer de pouvoir traiter les données JSON des requêtes entrantes.
+app.use(express.json()); // Ensure handling JSON data from incoming requests.
 
 const { OAuth2 } = google.auth;
 const oAuth2Client = new OAuth2(
@@ -19,7 +19,7 @@ oAuth2Client.setCredentials({
 
 const calendar = google.calendar({ version: 'v3', auth: oAuth2Client });
 
-app.post('https://steinlangspeisen-208ed1730d19.herokuapp.com/api/reservations', async (req, res) => {
+app.post('/api/reservations', async (req, res) => {
   const { name, email, date, time, guests } = req.body;
 
   const eventStartTime = new Date(date);
@@ -27,7 +27,7 @@ app.post('https://steinlangspeisen-208ed1730d19.herokuapp.com/api/reservations',
   eventStartTime.setMinutes(time.split(":")[1]);
 
   const eventEndTime = new Date(eventStartTime);
-  eventEndTime.setHours(eventEndTime.getHours() + 2); // Durée de la réservation de 2 heures.
+  eventEndTime.setHours(eventEndTime.getHours() + 2); // Duration of the reservation.
 
   const event = {
     summary: `Reservation for ${name}`,
