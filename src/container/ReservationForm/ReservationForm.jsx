@@ -55,7 +55,11 @@ const ReservationForm = () => {
       guests: reservation.guests.value,
     };
     try {
+<<<<<<< HEAD
       await axios.post('http://localhost:5000/api/reservations', formattedReservation);
+=======
+      await axios.post('https://steinlangspeisen-208ed1730d19.herokuapp.com/api/reservations', formattedReservation);
+>>>>>>> 84c2649b4f8287fc1337ab9013c319de31735c31
       setIsSubmitted(true);
     } catch (error) {
       console.error('There was an error making the reservation:', error);

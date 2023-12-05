@@ -5,7 +5,7 @@ const app = express();
 const cors = require('cors');
 
 app.use(cors());
-app.use(express.json()); // S'assurer de pouvoir traiter les données JSON des requêtes entrantes.
+app.use(express.json()); // Ensure handling JSON data from incoming requests.
 
 const { OAuth2 } = google.auth;
 const oAuth2Client = new OAuth2(
@@ -27,7 +27,7 @@ app.post('/api/reservations', async (req, res) => {
   eventStartTime.setMinutes(time.split(":")[1]);
 
   const eventEndTime = new Date(eventStartTime);
-  eventEndTime.setHours(eventEndTime.getHours() + 2); // Durée de la réservation de 2 heures.
+  eventEndTime.setHours(eventEndTime.getHours() + 2); // Duration of the reservation.
 
   const event = {
     summary: `Reservation for ${name}`,
