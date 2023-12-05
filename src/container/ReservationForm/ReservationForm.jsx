@@ -55,7 +55,7 @@ const ReservationForm = () => {
       guests: reservation.guests.value,
     };
     try {
-      await axios.post('/api/reservations', formattedReservation);
+      await axios.post('http://localhost:5000/api/reservations', formattedReservation);
       setIsSubmitted(true);
     } catch (error) {
       console.error('There was an error making the reservation:', error);
@@ -127,7 +127,7 @@ const ReservationForm = () => {
           placeholder="Number of guests"
           isSearchable={false}
         />
-        <button type="submit" className="reservation-button">Reserve</button>
+        <button type="submit" className="reservation-button">Reservieren</button>
       </form>
     </div>
   );
