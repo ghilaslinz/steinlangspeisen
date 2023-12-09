@@ -13,7 +13,7 @@ const Footer = () => (
       <div className="app__footer-links_contact">
         <h1 className="app__footer-headtext">Kontakt</h1>
         <p className="p__opensans">Gartenstraße 5, 1010 Wien, Österreich</p>
-        <p className="p__opensans">+1 212-344-1230</p>
+        <p className="p__opensans">+43 675 563 276 21</p>
       </div>
 
       <div className="app__footer-links_logo">

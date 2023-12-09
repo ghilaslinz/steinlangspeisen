@@ -17,6 +17,7 @@ import laurels from '../assets/laurels.png';
 import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
+import woodspoon from '../assets/wooden-spoon.png';
 
 export default {
   bg,
@@ -38,4 +39,5 @@ export default {
   quote,
   gericht,
   logoo,
+  woodspoon,
 };
